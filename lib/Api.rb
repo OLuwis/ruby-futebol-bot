@@ -7,7 +7,7 @@ require "json"
 require "tzinfo"
 require "faraday"
 require "dotenv/load"
-require_relative "translator"
+require_relative "Translator"
 
 module Api
   class Error < StandardError; end
