@@ -4,7 +4,7 @@
 require "rubygems"
 require "dotenv/load"
 require "telegram/bot"
-require_relative "api"
+require_relative "Api"
 
 module Bot
   class Error < StandardError; end
