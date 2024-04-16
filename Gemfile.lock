@@ -1,0 +1,95 @@
+PATH
+  remote: .
+  specs:
+    FutMatchBot (0.1.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    ast (2.4.2)
+    bigdecimal (3.1.7)
+    concurrent-ruby (1.2.3)
+    dotenv (3.1.0)
+    dry-core (1.0.1)
+      concurrent-ruby (~> 1.0)
+      zeitwerk (~> 2.6)
+    dry-inflector (1.0.0)
+    dry-logic (1.5.0)
+      concurrent-ruby (~> 1.0)
+      dry-core (~> 1.0, < 2)
+      zeitwerk (~> 2.6)
+    dry-struct (1.6.0)
+      dry-core (~> 1.0, < 2)
+      dry-types (>= 1.7, < 2)
+      ice_nine (~> 0.11)
+      zeitwerk (~> 2.6)
+    dry-types (1.7.2)
+      bigdecimal (~> 3.0)
+      concurrent-ruby (~> 1.0)
+      dry-core (~> 1.0)
+      dry-inflector (~> 1.0)
+      dry-logic (~> 1.4)
+      zeitwerk (~> 2.6)
+    faraday (2.9.0)
+      faraday-net_http (>= 2.0, < 3.2)
+    faraday-multipart (1.0.4)
+      multipart-post (~> 2)
+    faraday-net_http (3.1.0)
+      net-http
+    ice_nine (0.11.2)
+    json (2.7.2)
+    language_server-protocol (3.17.0.3)
+    multipart-post (2.4.0)
+    net-http (0.4.1)
+      uri
+    parallel (1.24.0)
+    parser (3.3.0.5)
+      ast (~> 2.4.1)
+      racc
+    racc (1.7.3)
+    rainbow (3.1.1)
+    rake (13.2.1)
+    regexp_parser (2.9.0)
+    rexml (3.2.6)
+    rubocop (1.63.1)
+      json (~> 2.3)
+      language_server-protocol (>= 3.17.0)
+      parallel (~> 1.10)
+      parser (>= 3.3.0.2)
+      rainbow (>= 2.2.2, < 4.0)
+      regexp_parser (>= 1.8, < 3.0)
+      rexml (>= 3.2.5, < 4.0)
+      rubocop-ast (>= 1.31.1, < 2.0)
+      ruby-progressbar (~> 1.7)
+      unicode-display_width (>= 2.4.0, < 3.0)
+    rubocop-ast (1.31.2)
+      parser (>= 3.3.0.4)
+    ruby-progressbar (1.13.0)
+    telegram-bot-ruby (1.0.0)
+      dry-struct (~> 1.6)
+      faraday (~> 2.0)
+      faraday-multipart (~> 1.0)
+      zeitwerk (~> 2.6)
+    tzinfo (2.0.6)
+      concurrent-ruby (~> 1.0)
+    tzinfo-data (1.2024.1)
+      tzinfo (>= 1.0.0)
+    unicode-display_width (2.5.0)
+    uri (0.13.0)
+    zeitwerk (2.6.13)
+
+PLATFORMS
+  x64-mingw-ucrt
+
+DEPENDENCIES
+  FutMatchBot!
+  dotenv (~> 3.1.0)
+  faraday (~> 2.9.0)
+  rake (~> 13.0)
+  rubocop (~> 1.21)
+  telegram-bot-ruby (~> 1.0)
+  tzinfo (~> 2.0.6)
+  tzinfo-data (~> 1.2024)
+
+BUNDLED WITH
+   2.5.9
