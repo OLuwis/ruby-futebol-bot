@@ -1,0 +1,6 @@
+*.yml
+*.md
+*.txt
+*.gemspec
+.gitignore
+/.git
