@@ -1,8 +1,10 @@
+#!/usr/bin/env ruby
 # frozen_string_literal: true
 
+require "rubygems"
 require "dotenv/load"
 require "telegram/bot"
-require_relative "Api"
+require_relative "api"
 
 module Bot
   class Error < StandardError; end

@@ -1,3 +1,4 @@
+#!/usr/bin/env ruby
 # frozen_string_literal: true
 
 require "time"
@@ -6,7 +7,7 @@ require "json"
 require "tzinfo"
 require "faraday"
 require "dotenv/load"
-require_relative "Translator"
+require_relative "translator"
 
 module Api
   class Error < StandardError; end
@@ -31,6 +32,10 @@ module Api
       data = JSON.parse(response.body)
 
       hashes = []
+
+      if data["matches"].length() == 0
+        return ["\n\nNenhum jogo nesta semana"]
+      end
 
       data["matches"].each { |match|
         time = Time.parse(match["utcDate"])
