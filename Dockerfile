@@ -20,4 +20,4 @@ COPY . .
 EXPOSE 3000
 
 # Define o comando para executar o aplicativo
-CMD ["ruby", "lib/bot.rb"]
+CMD ["ruby", "lib/Bot.rb"]
